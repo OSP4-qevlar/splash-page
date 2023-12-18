@@ -1,5 +1,3 @@
-import React from 'react';
-import GitHubButton from 'react-github-btn';
 import NavBar from './components/NavBar'
 import Intro from './components/Intro';
 import TestSummary from './components/TestSummary'

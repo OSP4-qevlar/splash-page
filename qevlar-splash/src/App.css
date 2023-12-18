@@ -4,7 +4,7 @@
 /* Import Medium.otf for headers and logo */
 @font-face {
   font-family: 'Medium';
-  src: url('../public/Medium.otf') format('opentype');
+  src: url('/Medium.otf') format('opentype');
 }
 
 /* Define brand colors */
@@ -38,12 +38,17 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 2em;
   font-weight: 700;
+  color: #e3e7f1;
 }
 
 h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.75em;
   font-weight: 400;
+}
+
+h4 {
+  color: #dae1f0
 }
 
 p {
@@ -102,7 +107,7 @@ p {
   opacity: 0.8;
 }
 
-
+/* -------------------------------------------------------------------- */
 /* NavBar.css */
 .navbar {
   display: flex;
@@ -159,7 +164,7 @@ p {
 }
 
 
-
+/* -------------------------------------------------------------------- */
 /* Intro.css */
 .intro {
   text-align: center;
@@ -185,6 +190,10 @@ p {
   margin-bottom: 2rem;
 }
 
+#intro-text-2 {
+  margin-top: 12rem;
+}
+
 .btn-contact {
   padding: 0.75rem 2rem;
   background-color: #ff758c;
@@ -203,7 +212,67 @@ p {
   /* Button hover background color */
 }
 
+/* -------------------------------------------------------------------- */
+/* TestSummary.css */
+.test-summary {
+  text-align: center;
+  padding: 4rem 2rem;
+  /* Adjust padding as needed */
+  /* background-color: transparent; */
+  /* background: linear-gradient(to top, var(--primary-color), #C4B7CB); */
+  /* Gradient background */
+  color: white;
+  /* Text color */
+}
 
+.test-summary-text h1 {
+  font-size: 4.5rem;
+  /* Adjust font size as needed */
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  /* Adjust line height as needed */
+}
+
+.test-summary-text p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-contact {
+  padding: 0.75rem 2rem;
+  background-color: #ff758c;
+  /* Adjust button background color as needed */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  /* Adjust border-radius as needed */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+  background-color: #ff527a;
+  /* Button hover background color */
+}
+
+/* -------------------------------------------------------------------- */
+/* TestSumExamples.css */
+#test-sum-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.test-sum-code {
+  background-image: url('./assets/code.png');
+  /* width: 100%; */
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 8px 8px #1D2332 inset
+}
+
+
+/* -------------------------------------------------------------------- */
 /* Github buttons */
 #github-button {
   background-color: #1D2332;
