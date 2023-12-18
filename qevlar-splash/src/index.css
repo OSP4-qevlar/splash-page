@@ -9,11 +9,11 @@
 
 /* Define brand colors */
 :root {
-  --primary-color: #1D2332; 
-  --secondary-color: #DEFEAB; 
-  --tertiary-color: #C4B7CB; 
-  --light-color: #FFFFFF; 
-  --dark-color: #1D2332; 
+  --primary-color: #1D2332;
+  --secondary-color: #DEFEAB;
+  --tertiary-color: #C4B7CB;
+  --light-color: #FFFFFF;
+  --dark-color: #1D2332;
 }
 
 /* Logo styles */
@@ -26,11 +26,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--dark-color);
+  background: linear-gradient(to top, var(--dark-color), #C4B7CB);
 }
 
 h1 {
   font-family: 'Medium', sans-serif;
-  font-size: 2.5em; /* Adjust size as needed */
+  font-size: 2.5em;
+  /* Adjust size as needed */
   font-weight: 900;
 }
 

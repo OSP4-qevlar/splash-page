@@ -9,11 +9,11 @@
 
 /* Define brand colors */
 :root {
-  --primary-color: #1D2332; 
-  --secondary-color: #DEFEAB; 
-  --tertiary-color: #C4B7CB; 
-  --light-color: #FFFFFF; 
-  --dark-color: #1D2332; 
+  --primary-color: #1D2332;
+  --secondary-color: #DEFEAB;
+  --tertiary-color: #C4B7CB;
+  --light-color: #FFFFFF;
+  --dark-color: #1D2332;
 }
 
 /* Logo styles */
@@ -29,7 +29,8 @@ body {
 
 h1 {
   font-family: 'Medium', sans-serif;
-  font-size: 2.5em; /* Adjust size as needed */
+  font-size: 2.5em;
+  /* Adjust size as needed */
   font-weight: 900;
 }
 
@@ -108,12 +109,15 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: transparent; /* Adjust if your navbar has a background color */
+  background-color: transparent;
+  /* background: linear-gradient(to bottom, var(--primary-color), #C4B7CB); */
+  /* Adjust if your navbar has a background color */
   color: white;
 }
 
 .logo {
-  font-size: 1.5rem; /* Adjust the size according to your logo */
+  font-size: 1.5rem;
+  /* Adjust the size according to your logo */
   font-weight: bold;
 }
 
@@ -124,27 +128,34 @@ p {
 .nav-links a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem; /* Adjust spacing between links as needed */
-  font-size: 1rem; /* Adjust font size as needed */
+  margin: 0 1rem;
+  /* Adjust spacing between links as needed */
+  font-size: 1rem;
+  /* Adjust font size as needed */
   transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-  color: #ddd; /* Hover color for links */
+  color: #ddd;
+  /* Hover color for links */
 }
 
 .nav-cta .btn-template {
   padding: 0.5rem 1rem;
-  background-color: #fff; /* Button background color */
-  color: #000; /* Button text color */
+  background-color: #fff;
+  /* Button background color */
+  color: #000;
+  /* Button text color */
   border: none;
-  border-radius: 20px; /* Adjust border-radius as needed */
+  border-radius: 20px;
+  /* Adjust border-radius as needed */
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 .nav-cta .btn-template:hover {
-  background-color: #f2f2f2; /* Button hover background color */
+  background-color: #f2f2f2;
+  /* Button hover background color */
 }
 
 
@@ -152,15 +163,21 @@ p {
 /* Intro.css */
 .intro {
   text-align: center;
-  padding: 4rem 2rem; /* Adjust padding as needed */
-  background: linear-gradient(to top, #1D2332, #000); /* Gradient background */
-  color: white; /* Text color */
+  padding: 4rem 2rem;
+  /* Adjust padding as needed */
+  /* background-color: transparent; */
+  /* background: linear-gradient(to top, var(--primary-color), #C4B7CB); */
+  /* Gradient background */
+  color: white;
+  /* Text color */
 }
 
 .intro-text h1 {
-  font-size: 4.5rem; /* Adjust font size as needed */
+  font-size: 4.5rem;
+  /* Adjust font size as needed */
   margin-bottom: 1rem;
-  line-height: 1.2; /* Adjust line height as needed */
+  line-height: 1.2;
+  /* Adjust line height as needed */
 }
 
 .intro-text p {
@@ -170,17 +187,20 @@ p {
 
 .btn-contact {
   padding: 0.75rem 2rem;
-  background-color: #ff758c; /* Adjust button background color as needed */
+  background-color: #ff758c;
+  /* Adjust button background color as needed */
   color: white;
   border: none;
-  border-radius: 50px; /* Adjust border-radius as needed */
+  border-radius: 50px;
+  /* Adjust border-radius as needed */
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease-in-out;
 }
 
 .btn-contact:hover {
-  background-color: #ff527a; /* Button hover background color */
+  background-color: #ff527a;
+  /* Button hover background color */
 }
 
 
