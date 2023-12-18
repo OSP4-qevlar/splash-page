@@ -1,42 +1,190 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/* Import Medium.otf for headers and logo */
+@font-face {
+  font-family: 'Medium';
+  src: url('../public/Medium.otf') format('opentype');
+}
+
+/* Define brand colors */
+:root {
+  --primary-color: #1D2332; 
+  --secondary-color: #DEFEAB; 
+  --tertiary-color: #C4B7CB; 
+  --light-color: #FFFFFF; 
+  --dark-color: #1D2332; 
+}
+
+/* Logo styles */
+.logo {
+  font-family: 'Medium', sans-serif;
+  /* Use your specific color codes for each logo variant */
+}
+
+/* Font styles */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Medium', sans-serif;
+  font-size: 2.5em; /* Adjust size as needed */
+  font-weight: 900;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* Style variations */
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.link-style {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+/* Button styles */
+.button {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: var(#000);
+  color: white;
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.button-tertiary {
+  background-color: var(--tertiary-color);
+  color: white;
+}
+
+.button-primary:hover,
+.button-secondary:hover,
+.button-tertiary:hover {
+  opacity: 0.8;
+}
+
+
+/* NavBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent; /* Adjust if your navbar has a background color */
+  color: white;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  font-size: 1.5rem; /* Adjust the size according to your logo */
+  font-weight: bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem; /* Adjust spacing between links as needed */
+  font-size: 1rem; /* Adjust font size as needed */
+  transition: color 0.3s ease-in-out;
 }
 
-.card {
-  padding: 2em;
+.nav-links a:hover {
+  color: #ddd; /* Hover color for links */
 }
 
-.read-the-docs {
-  color: #888;
+.nav-cta .btn-template {
+  padding: 0.5rem 1rem;
+  background-color: #fff; /* Button background color */
+  color: #000; /* Button text color */
+  border: none;
+  border-radius: 20px; /* Adjust border-radius as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-cta .btn-template:hover {
+  background-color: #f2f2f2; /* Button hover background color */
+}
+
+
+
+/* Intro.css */
+.intro {
+  text-align: center;
+  padding: 4rem 2rem; /* Adjust padding as needed */
+  background: linear-gradient(to top, #1D2332, #000); /* Gradient background */
+  color: white; /* Text color */
+}
+
+.intro-text h1 {
+  font-size: 4.5rem; /* Adjust font size as needed */
+  margin-bottom: 1rem;
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.intro-text p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-contact {
+  padding: 0.75rem 2rem;
+  background-color: #ff758c; /* Adjust button background color as needed */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Adjust border-radius as needed */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+  background-color: #ff527a; /* Button hover background color */
+}
+
+
+/* Github buttons */
+#github-button {
+  background-color: #1D2332;
 }
