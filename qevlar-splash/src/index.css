@@ -30,7 +30,7 @@ body {
 
 h1 {
   font-family: 'Medium', sans-serif;
-  font-size: 2.5em; /* Adjust size as needed */
+  font-size: 1.8em; /* Adjust size as needed */
   font-weight: 900;
 }
 
@@ -48,7 +48,7 @@ h3 {
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 400;
 }
 

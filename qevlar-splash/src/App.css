@@ -7,102 +7,8 @@
   src: url('../public/Medium.otf') format('opentype');
 }
 
-/* Define brand colors */
-:root {
-  --primary-color: #1D2332; 
-  --secondary-color: #DEFEAB; 
-  --tertiary-color: #C4B7CB; 
-  --light-color: #FFFFFF; 
-  --dark-color: #1D2332; 
-}
 
-/* Logo styles */
-.logo {
-  font-family: 'Medium', sans-serif;
-  /* Use your specific color codes for each logo variant */
-}
-
-/* Font styles */
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  font-family: 'Medium', sans-serif;
-  font-size: 2.5em; /* Adjust size as needed */
-  font-weight: 900;
-}
-
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  font-weight: 700;
-}
-
-h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.75em;
-  font-weight: 400;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-}
-
-/* Style variations */
-.bold {
-  font-weight: bold;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.link-style {
-  text-decoration: underline;
-  color: var(--primary-color);
-}
-
-/* Button styles */
-.button {
-  font-family: 'Roboto', sans-serif;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button-primary {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  background-color: var(#000);
-  color: white;
-}
-
-.button-secondary {
-  background-color: var(--secondary-color);
-  color: white;
-}
-
-.button-tertiary {
-  background-color: var(--tertiary-color);
-  color: white;
-}
-
-.button-primary:hover,
-.button-secondary:hover,
-.button-tertiary:hover {
-  opacity: 0.8;
-}
-
-
-/* NavBar.css */
+/* NavBar Component */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -113,7 +19,7 @@ p {
 }
 
 .logo {
-  font-size: 1.5rem; /* Adjust the size according to your logo */
+  font-size: 1.4rem; /* Adjust the size according to your logo */
   font-weight: bold;
 }
 
@@ -149,7 +55,7 @@ p {
 
 
 
-/* Intro.css */
+/* Intro component */
 .intro {
   text-align: center;
   padding: 4rem 2rem; /* Adjust padding as needed */
@@ -158,33 +64,14 @@ p {
 }
 
 .intro-text h1 {
-  font-size: 4.5rem; /* Adjust font size as needed */
+  font-size: 3.5rem; /* Adjust font size as needed */
   margin-bottom: 1rem;
   line-height: 1.2; /* Adjust line height as needed */
 }
 
 .intro-text p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.btn-contact {
-  padding: 0.75rem 2rem;
-  background-color: #ff758c; /* Adjust button background color as needed */
-  color: white;
-  border: none;
-  border-radius: 50px; /* Adjust border-radius as needed */
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease-in-out;
-}
 
-.btn-contact:hover {
-  background-color: #ff527a; /* Button hover background color */
-}
-
-
-/* Github buttons */
-#github-button {
-  background-color: #1D2332;
-}
