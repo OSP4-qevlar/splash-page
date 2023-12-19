@@ -25,7 +25,8 @@
 /* Font styles */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--dark-color);
+  /* background-color: var(--dark-color); */
+  background: linear-gradient(to top, #1D2332, #000);
 }
 
 h1 {
@@ -42,7 +43,7 @@ h2 {
 
 h3 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.75em;
+  font-size: 1.6em;
   font-weight: 400;
 }
 
@@ -69,7 +70,7 @@ p {
 /* Button styles */
 .button {
   font-family: 'Roboto', sans-serif;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -82,16 +83,33 @@ p {
 
 .button-secondary {
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--primary-color);
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: 15px 25px;
 }
 
 .button-tertiary {
-  background-color: var(--tertiary-color);
-  color: white;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  outline: var(--light-color);
+  outline-style: solid;
+  outline-width: 2px;
+  padding: 10px 20px;
+  color: var(--light-color);
 }
 
 .button-primary:hover,
 .button-secondary:hover,
 .button-tertiary:hover {
   opacity: 0.8;
+}
+
+
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }

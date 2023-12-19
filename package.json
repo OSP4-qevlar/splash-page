@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "react-github-btn": "^1.4.0"
+    "animejs": "^3.2.2",
+    "react-github-btn": "^1.4.0",
+    "react-icons": "^4.12.0"
   }
 }

@@ -1,8 +1,8 @@
-import React from 'react';
-import GitHubButton from 'react-github-btn';
 import NavBar from './components/NavBar'
 import Intro from './components/Intro';
+import Features from './components/Features';
 import './App.css'; // Your main CSS file that imports other styles
+import TestSummary from './components/TestSummary';
 
 const App = () => {
   
@@ -10,7 +10,8 @@ const App = () => {
     <div>
       <NavBar />
       <Intro />
-      {/* ... other components go here ... */}
+      <Features />
+      <TestSummary />
     </div>
   );
 }
