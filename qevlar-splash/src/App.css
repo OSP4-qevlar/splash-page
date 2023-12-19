@@ -15,6 +15,11 @@
   --dark-color: #1D2332; 
 }
 
+@keyframes slideInFromBottom {
+  from { transform: translateY(+50%); }
+  to { transform: translateX(0); }
+}
+
 /* NavBar Component */
 .navbar {
   display: flex;
@@ -23,15 +28,25 @@
   padding: 1rem 2rem;
   background-color: transparent; 
   color: white;
+  height: 5rem;
+}
+
+.button-navigation {
+  background-color: var(--primary-color);
+  min-height: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: var(--light-color);
+  font-size: 1rem;
+  border: none;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  border-radius: .1rem;
+  padding: 10px 20px;
 }
 
 .logo {
   font-size: 1.4rem; 
   font-weight: bold;
-}
-
-.nav-links {
-  display: flex;
 }
 
 .nav-links a {
@@ -40,6 +55,7 @@
   margin: 0 1rem;
   font-size: 1rem; 
   transition: color 0.3s ease-in-out;
+  padding: 10px 20px;
 }
 
 .nav-links a:hover {
@@ -59,6 +75,67 @@
 .nav-cta .btn-template:hover {
   background-color: #f2f2f2; 
 }
+
+/* Hamburger button styling */
+.hamburger {
+  background-color: transparent;
+  border: none;
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  font-size: 1.8rem; /* Adjust size as needed */
+  color: var(--light-color); /* Match the color of nav links */
+
+  font-size: 2rem; /* Adjust if necessary */
+  color: white; /* Change color if your navbar background is also white */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Full-screen mobile menu overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent; 
+  z-index: 998; 
+}
+
+/* Full-screen mobile menu styling */
+.nav-links.open {
+  font-family: "Medium";
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.98); 
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999; /* Above the overlay */
+  transition: all 0.3s ease;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; 
+  }
+
+  .nav-links a, .nav-links .button-navigation {
+    margin: 1rem; 
+  }
+}
+
 
 
 
@@ -85,6 +162,7 @@
 
 /* Features component styling */
 .features {
+  animation: slideInFromBottom .9s ease-out;
   display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -131,6 +209,9 @@ featureDescription {
 }
 
 
+
+
+
 /* TestSummary.css */
 .test-summary {
   color: #fff;
@@ -140,6 +221,7 @@ featureDescription {
   border-radius: 8px;
   max-width: 1200px;
   margin: auto;
+  animation: slideInFromBottom 1s ease-out;
 }
 
 .test-summary h1 {
@@ -198,4 +280,5 @@ featureDescription {
   padding-top: 10px;
   margin-top: 20px;
 }
+
 
