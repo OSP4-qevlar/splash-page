@@ -1,23 +1,27 @@
 /* Import Roboto font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
 /* Import Medium.otf for headers and logo */
 @font-face {
-  font-family: 'Medium';
-  src: url('../public/Medium.otf') format('opentype');
+  font-family: "Medium";
+  src: url("../public/Medium.otf") format("opentype");
 }
 
 :root {
-  --primary-color: #1D2332; 
-  --secondary-color: #DEFEAB; 
-  --tertiary-color: #C4B7CB; 
-  --light-color: #FFFFFF; 
-  --dark-color: #1D2332; 
+  --primary-color: #1d2332;
+  --secondary-color: #defeab;
+  --tertiary-color: #c4b7cb;
+  --light-color: #ffffff;
+  --dark-color: #1d2332;
 }
 
 @keyframes slideInFromBottom {
-  from { transform: translateY(+50%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateY(+50%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* NavBar Component */
@@ -26,7 +30,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: transparent; 
+  background-color: transparent;
   color: white;
   height: 5rem;
 }
@@ -34,18 +38,18 @@
 .button-navigation {
   background-color: var(--primary-color);
   min-height: 3rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: var(--light-color);
   font-size: 1rem;
   border: none;
   box-shadow: 10px 10px 10px rgb(0, 0, 0);
-  border-radius: .1rem;
+  border-radius: 0.1rem;
   padding: 10px 20px;
 }
 
 .logo {
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -53,27 +57,27 @@
   color: white;
   text-decoration: none;
   margin: 0 1rem;
-  font-size: 1rem; 
+  font-size: 1rem;
   transition: color 0.3s ease-in-out;
   padding: 10px 20px;
 }
 
 .nav-links a:hover {
-  color: #ddd; 
+  color: #ddd;
 }
 
 .nav-cta .btn-template {
   padding: 0.5rem 1rem;
-  background-color: #fff; 
-  color: #000; 
+  background-color: #fff;
+  color: #000;
   border: none;
-  border-radius: 20px; 
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 .nav-cta .btn-template:hover {
-  background-color: #f2f2f2; 
+  background-color: #f2f2f2;
 }
 
 /* Hamburger button styling */
@@ -100,8 +104,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: transparent; 
-  z-index: 998; 
+  background-color: transparent;
+  z-index: 998;
 }
 
 /* Full-screen mobile menu styling */
@@ -112,7 +116,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.98); 
+  background-color: rgba(0, 0, 0, 0.98);
   width: 100%;
   height: 100vh;
   top: 0;
@@ -128,29 +132,27 @@
   }
 
   .nav-links {
-    display: none; 
+    display: none;
   }
 
-  .nav-links a, .nav-links .button-navigation {
-    margin: 1rem; 
+  .nav-links a,
+  .nav-links .button-navigation {
+    margin: 1rem;
   }
 }
-
-
-
 
 /* Intro component */
 .intro {
   text-align: center;
-  padding: 4rem 2rem; 
+  padding: 4rem 2rem;
   /* background: linear-gradient(to top, #1D2332, #000); */
   color: white;
 }
 
 .intro-text h1 {
-  font-size: 3rem; 
+  font-size: 3rem;
   margin-bottom: 1rem;
-  line-height: 1.2; 
+  line-height: 1.2;
 }
 
 .intro-text p {
@@ -158,16 +160,14 @@
   margin-bottom: 2rem;
 }
 
-
-
 /* Features component styling */
 .features {
-  animation: slideInFromBottom .9s ease-out;
+  animation: slideInFromBottom 0.9s ease-out;
   display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
   text-align: center;
 }
 
@@ -182,23 +182,23 @@
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.328);
   width: 30rem;
   height: 10rem;
-  margin-top: .5%;
-  margin-bottom: .5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
 
 featureTitle {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: var(--light-color);
   font-size: 1.5rem;
   line-height: 1.2;
-  padding-bottom: .2rem;
+  padding-bottom: 0.2rem;
 }
 
 featureDescription {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgba(255, 255, 255, 0.44);
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   padding-left: 10%;
   padding-right: 10%;
@@ -208,15 +208,10 @@ featureDescription {
   animation: pulse 2s infinite;
 }
 
-
-
-
-
 /* TestSummary.css */
 .test-summary {
   color: #fff;
   background-color: transparent;
-  font-family: 'Arial', sans-serif;
   padding: 20px;
   border-radius: 8px;
   max-width: 1200px;
@@ -239,8 +234,8 @@ featureDescription {
 
 .features-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   margin-bottom: 20px;
 }
 
@@ -249,9 +244,11 @@ featureDescription {
   border-radius: 4px;
   padding: 20px;
   display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
   align-items: center;
   gap: 15px;
-  transition: transform 0.3s ease, background-color 0.3s ease; 
+  transition: transform 0.3s ease, background-color 0.3s ease;
   /* Animate the transform and background color properties */
 }
 
@@ -261,7 +258,8 @@ featureDescription {
 }
 
 .feature-icon {
-  font-size: 50px; 
+  font-size: 40px;
+  color: var(--tertiary-color);
 }
 
 .feature-title {
@@ -269,16 +267,118 @@ featureDescription {
   font-size: small;
 }
 
-.feature-description{
-  font-size: .9rem;
+.feature-description {
+  font-size: 0.9rem;
 }
 
 .features-footer {
-  font-size: 0.75rem; 
+  font-size: 0.75rem;
   /* Slightly smaller font size for additional info text */
   text-align: center;
   padding-top: 10px;
   margin-top: 20px;
 }
 
+/* Footer styles */
+.footer {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.footer-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #00000066;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.footer h3 {
+  font-size: 0.8rem;
+  line-height: 0.5;
+  color: #ffffff90;
+}
+
+.footer-line {
+  background: "#6F38C5";
+  height: "5px";
+  border: "none";
+}
+
+/* Team Component Styling */
+
+/* Features component styling */
+.team {
+  animation: slideInFromBottom 0.9s ease-out;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.team :hover {
+  transform: scale(1.05); /* Slightly increase the scale of the item */
+  background-color: #242b3d; /* Change the background color on hover */
+}
+
+.team-card {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: transparent;
+  outline: var(--light-color);
+  outline-style: solid;
+  outline-width: 1px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.328);
+  width: 15rem;
+  height: 10rem;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  border-radius: 0.2rem;
+}
+
+teamName {
+  font-family: "Medium";
+  font-weight: 700;
+  color: var(--light-color);
+  font-size: 0.9rem;
+  line-height: 1.2;
+  padding-bottom: 0.2rem;
+}
+
+teamDescription {
+  font-family: "Roboto", sans-serif;
+  color: var(--tertiary-color);
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.5;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.section h1 {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.section h3 {
+  color: #f2f2f254;
+  text-align: center;
+  font-size: large;
+}
+
+.team-icon {
+  font-size: 40px;
+  color: var(--light-color);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.121);
+}

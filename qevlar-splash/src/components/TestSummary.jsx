@@ -43,7 +43,7 @@ const features = [
         Icon: LuShieldCheck,
         title: "Field Duplication",
         description: "Check your API's ability to filter out field duplication attacks."
-    },
+    }, 
     // ... add other features here
   ];
 
@@ -51,7 +51,7 @@ const TestSummary = () => {
   return (
     <section className='section'>
     <div className="test-summary">
-      <h1>Native Features</h1>
+      <h1>Complete Library Of Tests</h1>
       <h4>Our library contains everything you need to test your API against malicious GraphQL queries.</h4>
       <div className="features-list">
         {features.map((feature, index) => (
