@@ -1,54 +1,60 @@
 /* Import Roboto font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
 /* Import Medium.otf for headers and logo */
 @font-face {
-  font-family: 'Medium';
-  src: url('../public/Medium.otf') format('opentype');
+  font-family: "Medium";
+  src: url("../public/Medium.otf") format("opentype");
 }
 
 /* Define brand colors */
 :root {
-  --primary-color: #1D2332; 
-  --secondary-color: #DEFEAB; 
-  --tertiary-color: #C4B7CB; 
-  --light-color: #FFFFFF; 
-  --dark-color: #1D2332; 
+  --primary-color: #1d2332;
+  --secondary-color: #defeab;
+  --tertiary-color: #c4b7cb;
+  --light-color: #ffffff;
+  --dark-color: #1d2332;
+  --spacing: 300px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Logo styles */
 .logo {
-  font-family: 'Medium', sans-serif;
+  font-family: "Medium", sans-serif;
   /* Use your specific color codes for each logo variant */
 }
 
 /* Font styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   /* background-color: var(--dark-color); */
-  background: linear-gradient(to top, #1D2332, #000);
+  /* background: linear-gradient(to top, #1d2332, #000); */
+  background: #0d0f16;
 }
 
 h1 {
-  font-family: 'Medium', sans-serif;
+  font-family: "Medium", sans-serif;
   font-size: 1.8em; /* Adjust size as needed */
   font-weight: 900;
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2em;
   font-weight: 700;
 }
 
 h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6em;
   font-weight: 400;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   font-weight: 400;
 }
@@ -69,7 +75,7 @@ p {
 
 /* Button styles */
 .button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 15px 25px;
   border: none;
   cursor: pointer;
@@ -85,7 +91,7 @@ p {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   border: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: 1rem;
   padding: 15px 25px;
@@ -93,7 +99,7 @@ p {
 
 .button-tertiary {
   background-color: transparent;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   outline: var(--light-color);
   outline-style: solid;
@@ -108,8 +114,23 @@ p {
   opacity: 0.8;
 }
 
-
 .section {
   padding-top: 8rem;
   padding-bottom: 8rem;
+  background-color: #0d0f16e4;
+  width: auto;
+}
+
+.section-solid {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #0d0f1656;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+}
+
+.large-section {
+  padding: 1.5rem;
+  margin-bottom: var(--spacing);
 }

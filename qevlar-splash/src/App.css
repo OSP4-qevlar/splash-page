@@ -13,24 +13,21 @@
   --tertiary-color: #c4b7cb;
   --light-color: #ffffff;
   --dark-color: #1d2332;
-}
-
-@keyframes slideInFromBottom {
-  from {
-    transform: translateY(+50%);
-  }
-  to {
-    transform: translateX(0);
-  }
+  --nav-space: 150px;
 }
 
 /* NavBar Component */
 .navbar {
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: transparent;
+  /* padding: 1rem 2rem; */
+  background-color: rgba(0, 0, 0, 0.816);
   color: white;
   height: 5rem;
 }
@@ -51,6 +48,7 @@
 .logo {
   font-size: 1.4rem;
   font-weight: bold;
+  padding-left: 1rem;
 }
 
 .nav-links a {
@@ -125,6 +123,12 @@
   transition: all 0.3s ease;
 }
 
+@media (min-width: 900px) {
+  .hamburger {
+    display: hidden;
+  }
+}
+
 /* Media query for mobile devices */
 @media (max-width: 900px) {
   .hamburger {
@@ -147,6 +151,11 @@
   padding: 4rem 2rem;
   /* background: linear-gradient(to top, #1D2332, #000); */
   color: white;
+}
+
+.hero {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
 }
 
 .intro-text h1 {
@@ -239,6 +248,13 @@ featureDescription {
   margin-bottom: 20px;
 }
 
+@media (max-width: 600px) {
+  /* Adjust 600px to the maximum width you consider as 'mobile' */
+  .features-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .feature-item {
   background-color: var(--dark-color);
   border-radius: 4px;
@@ -287,15 +303,31 @@ featureDescription {
   align-items: center;
 }
 
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
 .footer-section {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: #00000066;
+  background-color: #000000;
   color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-radius: 10px;
+  width: 100%;
+  bottom: 0%;
+  right: 0%;
 }
 
 .footer h3 {
@@ -324,8 +356,7 @@ featureDescription {
 }
 
 .team :hover {
-  transform: scale(1.05); /* Slightly increase the scale of the item */
-  background-color: #242b3d; /* Change the background color on hover */
+  transform: scale(1.05);
 }
 
 .team-card {
@@ -335,10 +366,10 @@ featureDescription {
   align-items: center;
   align-content: center;
   justify-content: center;
-  background-color: transparent;
-  outline: var(--light-color);
+  background-color: var(black);
+  /* outline: var(--light-color);
   outline-style: solid;
-  outline-width: 1px;
+  outline-width: 1px; */
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.328);
   width: 15rem;
   height: 10rem;
@@ -381,4 +412,72 @@ teamDescription {
   font-size: 40px;
   color: var(--light-color);
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.121);
+}
+
+/* three js styling */
+.canvas {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* interactive test component */
+.testWrapper {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; */
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+code {
+  padding: 20px;
+  grid-column: 1;
+  justify-content: center;
+  font-size: larger;
+  border: #000;
+  border-radius: 5px;
+}
+
+.code-description {
+  padding: 20px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  grid-column: 1;
+}
+
+.testWrapper h2 {
+  color: var(--light-color);
+  font-size: 2rem;
+  max-width: 500px;
+}
+.testWrapper p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+/* Media Query for mobile view (example breakpoint: 768px) */
+@media (max-width: 768px) {
+  .testWrapper {
+    grid-template-columns: 2fr; /* Single column for mobile view */
+  }
+
+  .code {
+    grid-column: 1; /* Span the entire single column in mobile view */
+    justify-self: start; /* Align content to the start (left side) */
+  }
+
+  .code-description {
+    grid-column: 1;
+    padding-left: 0; /* Remove left padding in mobile view for better alignment */
+  }
 }
