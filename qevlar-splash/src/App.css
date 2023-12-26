@@ -1,12 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 
-@font-face {
-  font-family: 'Medium';
-  src: url('../public/Medium.otf') format('otf');
-  font-weight: bold;
-  font-style: normal;
-}
-
-
+/* Hamburger button styling */
+.hamburger {
+    background-color: transparent;
+    border: none;
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    font-size: 1.8rem; /* Adjust size as needed */
+    color: var(--light-color); /* Match the color of nav links */
+  
+    font-size: 2rem; /* Adjust if necessary */
+    color: white; /* Change color if your navbar background is also white */
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  /* Full-screen mobile menu overlay */
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent; 
+    z-index: 998; 
+  }
+  
+  /* Full-screen mobile menu styling */
+  .nav-links.open {
+    font-family: "Medium";
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.98); 
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Above the overlay */
+    transition: all 0.3s ease;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 900px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none; 
+    }
+  
+    .nav-links a, .nav-links .button-navigation {
+      margin: 1rem; 
+    }
+  }
+  

@@ -1,26 +1,85 @@
+import { LuShieldCheck } from "react-icons/lu";
+import { PiAlienBold } from "react-icons/pi";
+import{Link, Route, Routes, useNavigate} from 'react-router-dom'
 
+
+
+// ...other imports as necessary
+const features = [
+    {
+      Icon: LuShieldCheck,
+      title: "Malicious Injection",
+      description: "Runs a fake malicious injection test based on inputted parameters."
+    },
+    {
+      Icon: PiAlienBold,
+      title: "Field Duplication",
+      description: "Check your API's ability to filter out field duplication attacks."
+    },
+    {
+      Icon: LuShieldCheck,
+      title: "Field Duplication",
+      description: "Check your API's ability to filter out field duplication attacks."
+    },
+    {
+      Icon: LuShieldCheck,
+      title: "Field Duplication",
+      description: "Check your API's ability to filter out field duplication attacks."
+    },
+    {
+        Icon: LuShieldCheck,
+        title: "Malicious Injection",
+        description: "Runs a fake malicious injection test based on inputted parameters."
+    },
+    {
+        Icon: LuShieldCheck,
+        title: "Field Duplication",
+        description: "Check your API's ability to filter out field duplication attacks."
+    },
+    {
+        Icon: LuShieldCheck,
+        title: "Field Duplication",
+        description: "Check your API's ability to filter out field duplication attacks."
+    },
+    {
+        Icon: LuShieldCheck,
+        title: "Field Duplication",
+        description: "Check your API's ability to filter out field duplication attacks."
+    },
+    // ... add other features here
+  ];
 const Testsum = () =>{
+ 
     return (
-        <>
+        <section className='section'>
+
         <h1>Test Summary</h1>
-        <p>Uglier than a dog, sweeter than a pig</p>
-        <p>We gave our test kit to a very sick api that was getting hacked out the wazoo</p>
-        <p>The results will astound</p>
 
-        <h1>Sample tests</h1>
-        <blockquote>
-        <pre className="code-block">
-        <code>
-            <output>
-            <p>
-              
+    
+    <div className="test-summary">
+      <h1>Native Features</h1>
+      <h4>Our library contains everything you need to test your API against malicious GraphQL queries.</h4>
+      <div className="features-list">
+        {features.map((feature, index) => (
+          <div key={index} className="feature-item">
+            <feature.Icon className="feature-icon" />
+            <div className="feature-text">
+              <h2 className="feature-title">{feature.title}</h2>
+              <p className="feature-description">{feature.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <footer className="features-footer">
+        See the full list of native APIs in our docs, including Maps, SQLite, Contacts, Secure Storage, and many more.
+      </footer>
+    </div>
+   
 
-            </p>
-            </output>
-        </code>
-        </pre>
-        </blockquote>
-        </>
-    )
+    </section>
+  );
+
+
+
 }
 export default Testsum; 

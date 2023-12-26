@@ -1,9 +1,14 @@
-import { useState } from 'react'
+import {  useEffect, useRef } from 'react'
 import Docs from './Docs'
 import BigPicture from './canvas'
 import Features from './Features'
 import Testsum from './TestSum'
 import Devs from './DevInfo'
+import Sampletest from './Samples'
+import { FaGithub } from "react-icons/fa";
+import 'prismjs/themes/prism.css';
+import './App.css'
+
 
 import{Link, Route, Routes} from 'react-router-dom'
 
@@ -11,30 +16,66 @@ import{Link, Route, Routes} from 'react-router-dom'
 // import './App.css'
 
 const Home = () => {
+
+  
+  const observer = useRef(
+    new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    })
+  );
+  
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.current.observe(el));
+  
+    // Clean up the observer when the component unmounts
+    return () => {
+      hiddenElements.forEach((el) => observer.current.unobserve(el));
+    };
+  }, []);
+  
+
   return(
     <>
     <div id='canvas'>
     <BigPicture />
    </div>
     <section className='main'> 
- {/* header/intro */}
- <h1>What is Qevlar</h1>
+
+ <h1>GraphQL Security Testing Toolkit</h1>
+ <p>An ultra-lightweight security testing library for graphQL</p>
+ <a href='https://github.com/oslabs-beta/Qevlar' >
+ <button className="button-secondary"><FaGithub /> Download Qevlar On Github</button>
+ </a>
+
 
     {/* navbar */}
- <p className='text'>I'll tell ya what it is</p>
 
  </section>
-<section>
+
+<section className='hidden'>
  <Features />
  </section>
- <section>
-  <Testsum />
 
+ <section className='hidden'>
+  <Testsum />
  </section>
- <section>
+
+ <section className='hidden'>
+  <Sampletest />
+ </section>
+
+ <section className='hidden'>
   <Devs />
  </section>
- <section>
+
+ <section className='hidden'>
   <h1>Feet</h1>
   <p>My feet</p>
   <p>You're feet</p>
@@ -52,6 +93,21 @@ const Home = () => {
 function App() {
 
 
+// const observer = new IntersectionObserver((entries) =>{
+//   entries.forEach((entry) =>{
+//     if(entry.isIntersecting){
+//       entry.target.classList.add('show');
+//     } else{
+//       entry.target.classList.remove('show')
+//     }
+//   })
+// })
+
+// const hiddenElements = document.querySelectorAll('.hidden')
+// hiddenElements.forEach((el) => observer.observe(el))
+
+
+
   return (
     <>
     <div className='container'>
@@ -67,7 +123,7 @@ function App() {
         <button>Docs</button>
       </Link>
       <a><button>Contact</button></a>
-      <a><button>Github</button></a>
+      <a href='https://github.com/oslabs-beta/Qevlar'><button>Github</button></a>
      
       </nav>
 
