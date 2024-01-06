@@ -78,7 +78,7 @@ const HexagonGeometry = () => {
   const hexRef = useRef();
 
   useFrame(() => {
-    hexRef.current.rotation.y += 0.0002;
+    hexRef.current.rotation.y += 0.0008;
   });
 
   return (
