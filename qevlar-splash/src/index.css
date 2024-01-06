@@ -1,5 +1,12 @@
-/* Import Roboto font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+/* Import Roboto font from Google Fonts */
+
 
 /* Import Medium.otf for headers and logo */
 @font-face {
@@ -37,7 +44,8 @@ body {
 
 h1 {
   font-family: "Medium", sans-serif;
-  font-size: 1.8em; /* Adjust size as needed */
+  font-size: 1.8em;
+  /* Adjust size as needed */
   font-weight: 900;
 }
 
