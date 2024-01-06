@@ -27,9 +27,9 @@ const TestExampleTabs = () => {
 
 
   return (
-    <section>
-      <div className="">
-        <div className="md:flex">
+    <section className="">
+      <div className="flex justify-center items-center snap-center content-center">
+        <div className="sm:flex max-w-screen-xl justify-center items-center">  
           <ul className="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
             <li>
               <a onClick={e => handleTabClick(e.target.id)} id='tab0' className={activeTab === "tab0" ? selectedTab : deselectedTab} aria-current="page">
