@@ -19,8 +19,8 @@ const App = () => {
       <NavBar />
       <Intro />
       <Features />
-      
-      <TestExampleTabs />
+
+      {/* <TestExampleTabs /> */}
       <TestSummary />
       <TestInteractive />
       <TeamInfo />
