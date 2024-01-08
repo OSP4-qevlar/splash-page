@@ -13,11 +13,11 @@
 @tailwind variants;
 
 :root {
-  --primary-color: #1d2332;
+  --primary-color: #0e1017;
   --secondary-color: #defeab;
   --tertiary-color: #c4b7cb;
   --light-color: #ffffff;
-  --dark-color: #1d2332;
+  --dark-color: #0e1017;
   --nav-space: 150px;
 }
 
@@ -31,8 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem 2rem; */
-  background-color: rgba(0, 0, 0, 0.816);
+  background-color: black;
   color: white;
   height: 5rem;
 }
@@ -160,7 +159,6 @@
 .intro {
   text-align: center;
   padding: 4rem 2rem;
-  /* background: linear-gradient(to top, #1D2332, #000); */
   color: white;
 }
 
@@ -198,7 +196,7 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  background-color: var(--dark-color);
+  background-color: #0e1017;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.328);
   width: 30rem;
   height: 10rem;
@@ -260,7 +258,6 @@ featureDescription {
 }
 
 @media (max-width: 600px) {
-
   /* Adjust 600px to the maximum width you consider as 'mobile' */
   .features-list {
     grid-template-columns: repeat(2, 1fr);
@@ -268,8 +265,8 @@ featureDescription {
 }
 
 .feature-item {
-  background-color: var(--dark-color);
-  border-radius: 4px;
+  background-color: #0e1017;
+  border-radius: 5px;
   padding: 20px;
   display: flex;
   overflow: hidden;
@@ -283,7 +280,7 @@ featureDescription {
 .feature-item:hover {
   transform: scale(1.05);
   /* Slightly increase the scale of the item */
-  background-color: #242b3d;
+  background-color: #0e1017;
   /* Change the background color on hover */
 }
 
@@ -380,10 +377,7 @@ featureDescription {
   align-items: center;
   align-content: center;
   justify-content: center;
-  background-color: var(black);
-  /* outline: var(--light-color);
-  outline-style: solid;
-  outline-width: 1px; */
+  background-color: #0e1017;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.328);
   width: 15rem;
   height: 10rem;

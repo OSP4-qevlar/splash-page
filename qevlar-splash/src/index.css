@@ -7,7 +7,6 @@
 
 /* Import Roboto font from Google Fonts */
 
-
 /* Import Medium.otf for headers and logo */
 @font-face {
   font-family: "Medium";
@@ -37,9 +36,7 @@ html {
 /* Font styles */
 body {
   font-family: "Roboto", sans-serif;
-  /* background-color: var(--dark-color); */
-  /* background: linear-gradient(to top, #1d2332, #000); */
-  background: #0d0f16;
+  background: #0e1017;
 }
 
 h1 {
@@ -125,14 +122,13 @@ p {
 .section {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #0d0f16e4;
   width: auto;
 }
 
 .section-solid {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #0d0f1656;
+  /* background-color: #0e1017; */
   width: 100%;
   top: 0%;
   right: 0%;

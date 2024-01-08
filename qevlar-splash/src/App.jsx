@@ -6,7 +6,6 @@ import TestSummary from "./components/TestSummary";
 import Footer from "./components/Footer";
 import TeamInfo from "./components/TeamInfo";
 import ThreeD from "./threejsComponents/Canvas";
-import { useRef, useEffect } from "react";
 import TestInteractive from "./components/TestInteractive";
 import TestExampleTabs from "./components/TestExampleTabs";
 
@@ -19,8 +18,7 @@ const App = () => {
       <NavBar />
       <Intro />
       <Features />
-
-      {/* <TestExampleTabs /> */}
+      <TestExampleTabs />
       <TestSummary />
       <TestInteractive />
       <TeamInfo />
