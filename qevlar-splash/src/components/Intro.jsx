@@ -16,7 +16,7 @@ const Intro = () => {
             href="https://github.com/oslabs-beta/qevlar"
             className="mt-4 inline-block"
           >
-            <button className="flex items-center justify-center px-4 py-3 bg-gray-200 text-black rounded hover:bg-gray-300">
+            <button className="flex items-center justify-center px-4 py-3 bg-secondary text-black rounded hover:bg-gray-300">
               <FaGithub className="mr-2" /> Download Qevlar On Github
             </button>
           </a>

@@ -30,8 +30,8 @@ const NavBar = () => {
             href="https://github.com/oslabs-beta/qevlar"
             className="mt-4 inline-block"
           >
-            <button className="flex items-center justify-center px-4 py-2 bg-gray-200 text-black rounded hover:bg-gray-300">
-              <FaGithub className="mr-2" /> See Our Github
+            <button className="flex items-center justify-center px-4 py-2 bg-secondary text-black rounded hover:bg-gray-300">
+              <FaGithub className="mr-2" /> Qevlar Github
             </button>
           </a>
         </div>
