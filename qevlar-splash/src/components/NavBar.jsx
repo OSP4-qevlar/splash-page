@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <header>
-      <nav style={{ backgroundColor: "#0E1017" }} className="navbar">
+      <nav style={{ backgroundColor: "#000000" }} className="navbar">
         <div className="logo">qevlar</div>
         {/* Toggle button */}
         <button
