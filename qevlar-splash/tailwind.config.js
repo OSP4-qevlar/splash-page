@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./src/**/*.{html,js,jsx,ts,tsx}",
@@ -12,6 +13,9 @@ export default {
         secondary: "#defeab",
         tertiary: "#c4b7cb",
         dark: "#0E1017",
+      },
+      fontFamily: {
+        customFont: ['"Roboto"', "sans"],
       },
     },
   },

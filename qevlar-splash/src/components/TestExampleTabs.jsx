@@ -35,7 +35,7 @@ const TestExampleTabs = () => {
       </h3>
       <div className="flex justify-center items-center p-10">
         <div className="flex w-full md:w-4/5 justify-center items-center flex-wrap">
-          <ul className="flex flex-wrap justify-center mb-4">
+          <ul className="flex flex-wrap justify-center mb-4 text-l">
             {/* Tab Items */}
             <li className="m-2">
               <a
