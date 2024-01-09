@@ -101,6 +101,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding-right: 10px;
   z-index: 1000;
 }
 

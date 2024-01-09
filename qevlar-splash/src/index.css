@@ -15,11 +15,11 @@
 
 /* Define brand colors */
 :root {
-  --primary-color: #1d2332;
+  --primary-color: #1a212f;
   --secondary-color: #defeab;
   --tertiary-color: #c4b7cb;
   --light-color: #ffffff;
-  --dark-color: #1d2332;
+  --dark-color: #1a212f;
   --spacing: 100px;
 }
 

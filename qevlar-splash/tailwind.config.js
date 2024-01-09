@@ -8,12 +8,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary": "#1d2332",
-        "secondary": "#defeab",
-        "tertiary": "#c4b7cb",
-      }
+        primary: "#1d2332",
+        secondary: "#defeab",
+        tertiary: "#c4b7cb",
+        dark: "#0E1017",
+      },
     },
   },
   plugins: [],
-}
-
+};

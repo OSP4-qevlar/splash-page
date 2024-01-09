@@ -26,8 +26,8 @@ const TestExampleTabs = () => {
   const [activeTab, setActiveTab] = useState("tab0");
 
   return (
-    <section className="text-gray-900 dark:text-white">
-      <h1 className="text-2xl font-bold text-center">
+    <section className="text-gray-900 dark:text-white bg-dark">
+      <h1 className="text-2xl font-bold text-center pt-10">
         Preview the testing environment
       </h1>
       <h3 className="text-xl text-center p-4">
@@ -75,7 +75,7 @@ const TestExampleTabs = () => {
             </li>
           </ul>
           <div className="max-w-3xl w-full">
-            <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+            <div className="p-6 dark:bg-gray-800 rounded-lg">
               <img src={testSnippet} alt="Test Snippet" className="w-full" />
             </div>
           </div>
