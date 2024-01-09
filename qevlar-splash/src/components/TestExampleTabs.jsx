@@ -33,51 +33,49 @@ const TestExampleTabs = () => {
       <h3 className="text-xl text-center p-4">
         See an example of our testing toolkit.
       </h3>
-      <div className="flex justify-center items-center p-10">
-        <div className="flex w-full md:w-4/5 justify-center items-center flex-wrap">
-          <ul className="flex flex-wrap justify-center mb-4 text-l">
-            {/* Tab Items */}
-            <li className="m-2">
-              <a
-                onClick={(e) => handleTabClick("tab0")}
-                id="tab0"
-                className={activeTab === "tab0" ? selectedTab : deselectedTab}
-              >
-                Test Menu
-              </a>
-            </li>
-            <li className="m-2">
-              <a
-                onClick={(e) => handleTabClick("tab1")}
-                id="tab1"
-                className={activeTab === "tab1" ? selectedTab : deselectedTab}
-              >
-                Rate Limiting
-              </a>
-            </li>
-            <li className="m-2">
-              <a
-                onClick={(e) => handleTabClick("tab2")}
-                id="tab2"
-                className={activeTab === "tab2" ? selectedTab : deselectedTab}
-              >
-                SQL Injection
-              </a>
-            </li>
-            <li className="m-2">
-              <a
-                onClick={(e) => handleTabClick("tab3")}
-                id="tab3"
-                className={activeTab === "tab3" ? selectedTab : deselectedTab}
-              >
-                Depth Limiting
-              </a>
-            </li>
-          </ul>
-          <div className="max-w-3xl w-full">
-            <div className="p-6 dark:bg-gray-800 rounded-lg">
-              <img src={testSnippet} alt="Test Snippet" className="w-full" />
-            </div>
+      <div className="flex flex-col items-center p-10">
+        <ul className="flex justify-center mb-4 text-l">
+          {/* Tab Items */}
+          <li className="m-2">
+            <a
+              onClick={() => handleTabClick("tab0")}
+              id="tab0"
+              className={activeTab === "tab0" ? selectedTab : deselectedTab}
+            >
+              Test Menu
+            </a>
+          </li>
+          <li className="m-2">
+            <a
+              onClick={() => handleTabClick("tab1")}
+              id="tab1"
+              className={activeTab === "tab1" ? selectedTab : deselectedTab}
+            >
+              Rate Limiting
+            </a>
+          </li>
+          <li className="m-2">
+            <a
+              onClick={() => handleTabClick("tab2")}
+              id="tab2"
+              className={activeTab === "tab2" ? selectedTab : deselectedTab}
+            >
+              SQL Injection
+            </a>
+          </li>
+          <li className="m-2">
+            <a
+              onClick={() => handleTabClick("tab3")}
+              id="tab3"
+              className={activeTab === "tab3" ? selectedTab : deselectedTab}
+            >
+              Depth Limiting
+            </a>
+          </li>
+        </ul>
+        <div className="max-w-3xl w-full">
+          <div className="p-6 dark:bg-gray-800 rounded-lg">
+            <img src={testSnippet} alt="Test Snippet" className="w-full" />
           </div>
         </div>
       </div>

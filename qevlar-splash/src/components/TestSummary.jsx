@@ -41,7 +41,7 @@ const featuresLine2 = [
 
 const TestSummary = () => {
   return (
-    <div className="section-solid" id="testsummary">
+    <div className="bg-dark">
       <section className="section">
         <div className="test-summary">
           <h1>Complete Library Of Tests</h1>
