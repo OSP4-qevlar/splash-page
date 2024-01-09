@@ -7,12 +7,17 @@
   src: url("../public/Medium.otf") format("opentype");
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
 :root {
-  --primary-color: #1d2332;
+  --primary-color: #0e1017;
   --secondary-color: #defeab;
   --tertiary-color: #c4b7cb;
   --light-color: #ffffff;
-  --dark-color: #1d2332;
+  --dark-color: #0e1017;
   --nav-space: 150px;
 }
 
@@ -26,8 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem 2rem; */
-  background-color: rgba(0, 0, 0, 0.816);
+  background-color: black;
   color: white;
   height: 5rem;
 }
@@ -82,16 +86,22 @@
 .hamburger {
   background-color: transparent;
   border: none;
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   cursor: pointer;
-  font-size: 1.8rem; /* Adjust size as needed */
-  color: var(--light-color); /* Match the color of nav links */
+  font-size: 1.8rem;
+  /* Adjust size as needed */
+  color: var(--light-color);
+  /* Match the color of nav links */
 
-  font-size: 2rem; /* Adjust if necessary */
-  color: white; /* Change color if your navbar background is also white */
+  font-size: 2rem;
+  /* Adjust if necessary */
+  color: white;
+  /* Change color if your navbar background is also white */
   background: none;
   border: none;
   cursor: pointer;
+  padding-right: 10px;
   z-index: 1000;
 }
 
@@ -119,7 +129,8 @@
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 999; /* Above the overlay */
+  z-index: 999;
+  /* Above the overlay */
   transition: all 0.3s ease;
 }
 
@@ -149,7 +160,6 @@
 .intro {
   text-align: center;
   padding: 4rem 2rem;
-  /* background: linear-gradient(to top, #1D2332, #000); */
   color: white;
 }
 
@@ -187,7 +197,7 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  background-color: var(--dark-color);
+  background-color: #0e1017;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.328);
   width: 30rem;
   height: 10rem;
@@ -256,8 +266,8 @@ featureDescription {
 }
 
 .feature-item {
-  background-color: var(--dark-color);
-  border-radius: 4px;
+  background-color: #0e1017;
+  border-radius: 5px;
   padding: 20px;
   display: flex;
   overflow: hidden;
@@ -269,8 +279,10 @@ featureDescription {
 }
 
 .feature-item:hover {
-  transform: scale(1.05); /* Slightly increase the scale of the item */
-  background-color: #242b3d; /* Change the background color on hover */
+  transform: scale(1.05);
+  /* Slightly increase the scale of the item */
+  background-color: #0e1017;
+  /* Change the background color on hover */
 }
 
 .feature-icon {
@@ -366,10 +378,7 @@ featureDescription {
   align-items: center;
   align-content: center;
   justify-content: center;
-  background-color: var(black);
-  /* outline: var(--light-color);
-  outline-style: solid;
-  outline-width: 1px; */
+  background-color: #0e1017;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.328);
   width: 15rem;
   height: 10rem;
@@ -460,6 +469,7 @@ code {
   font-size: 2rem;
   max-width: 500px;
 }
+
 .testWrapper p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
@@ -468,16 +478,20 @@ code {
 /* Media Query for mobile view (example breakpoint: 768px) */
 @media (max-width: 768px) {
   .testWrapper {
-    grid-template-columns: 2fr; /* Single column for mobile view */
+    grid-template-columns: 2fr;
+    /* Single column for mobile view */
   }
 
   .code {
-    grid-column: 1; /* Span the entire single column in mobile view */
-    justify-self: start; /* Align content to the start (left side) */
+    grid-column: 1;
+    /* Span the entire single column in mobile view */
+    justify-self: start;
+    /* Align content to the start (left side) */
   }
 
   .code-description {
     grid-column: 1;
-    padding-left: 0; /* Remove left padding in mobile view for better alignment */
+    padding-left: 0;
+    /* Remove left padding in mobile view for better alignment */
   }
 }

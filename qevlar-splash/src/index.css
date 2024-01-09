@@ -1,5 +1,11 @@
-/* Import Roboto font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+/* Import Roboto font from Google Fonts */
 
 /* Import Medium.otf for headers and logo */
 @font-face {
@@ -9,12 +15,12 @@
 
 /* Define brand colors */
 :root {
-  --primary-color: #1d2332;
+  --primary-color: #1a212f;
   --secondary-color: #defeab;
   --tertiary-color: #c4b7cb;
   --light-color: #ffffff;
-  --dark-color: #1d2332;
-  --spacing: 300px;
+  --dark-color: #1a212f;
+  --spacing: 100px;
 }
 
 html {
@@ -30,14 +36,13 @@ html {
 /* Font styles */
 body {
   font-family: "Roboto", sans-serif;
-  /* background-color: var(--dark-color); */
-  /* background: linear-gradient(to top, #1d2332, #000); */
-  background: #0d0f16;
+  background: #0e1017;
 }
 
 h1 {
   font-family: "Medium", sans-serif;
-  font-size: 1.8em; /* Adjust size as needed */
+  font-size: 1.8em;
+  /* Adjust size as needed */
   font-weight: 900;
 }
 
@@ -117,14 +122,13 @@ p {
 .section {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #0d0f16e4;
   width: auto;
 }
 
 .section-solid {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #0d0f1656;
+  /* background-color: #0e1017; */
   width: 100%;
   top: 0%;
   right: 0%;

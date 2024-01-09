@@ -6,8 +6,8 @@ import TestSummary from "./components/TestSummary";
 import Footer from "./components/Footer";
 import TeamInfo from "./components/TeamInfo";
 import ThreeD from "./threejsComponents/Canvas";
-import { useRef, useEffect } from "react";
 import TestInteractive from "./components/TestInteractive";
+import TestExampleTabs from "./components/TestExampleTabs";
 
 const App = () => {
   return (
@@ -18,6 +18,7 @@ const App = () => {
       <NavBar />
       <Intro />
       <Features />
+      <TestExampleTabs />
       <TestSummary />
       <TestInteractive />
       <TeamInfo />

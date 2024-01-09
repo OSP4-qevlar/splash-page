@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <header>
-      <nav className="navbar">
+      <nav style={{ backgroundColor: "#0E1017" }} className="navbar">
         <div className="logo">qevlar</div>
         {/* Toggle button */}
         <button
@@ -26,9 +26,12 @@ const NavBar = () => {
           <a href="#testsummary">Features</a>
           <a href="#team">Team Info</a>
           <a href="#devinfo">Developer Info</a>
-          <a href="https://github.com/oslabs-beta/qevlar">
-            <button className="button-navigation">
-              <FaGithub /> See Our Github
+          <a
+            href="https://github.com/oslabs-beta/qevlar"
+            className="mt-4 inline-block"
+          >
+            <button className="flex items-center justify-center px-4 py-2 bg-secondary text-black rounded hover:bg-gray-300">
+              <FaGithub className="mr-2" /> Qevlar Github
             </button>
           </a>
         </div>

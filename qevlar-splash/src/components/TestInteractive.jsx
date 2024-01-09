@@ -26,16 +26,10 @@ const TestInteractive = () => {
           adapt.
         </p>
         <pre>
-          <code ref={codeRef} className="javascript">
-            {`{
-  "API_URL": "http://localhost:5000/graphql",
-  "TOP_FIELD": "house",
-  "SUB_FIELD": "charactersInHouse",
-  "QUERY_LIMIT": 50,
-  "WINDOW": 1000,
-  "QUERY_DEPTH_LIMIT": 7
-}`}
-          </code>
+          <img
+            src="https://i.ibb.co/M84F7hC/qevlar-config-snippet-nobg.webp"
+            alt="config"
+          ></img>
         </pre>
       </div>
     </section>
