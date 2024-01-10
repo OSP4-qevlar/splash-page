@@ -24,8 +24,8 @@ const NavBar = () => {
         <div className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}>
           {/* Close mobile menu when a link is clicked */}
           <a href="#testsummary">Features</a>
-          <a href="#team">Team Info</a>
-          <a href="#devinfo">Developer Info</a>
+          <a href="#team">Meet The Team</a>
+          <a href="https://www.npmjs.com/package/qevlar">NPM Documentation</a>
           <a
             href="https://github.com/oslabs-beta/qevlar"
             className="mt-4 inline-block"
