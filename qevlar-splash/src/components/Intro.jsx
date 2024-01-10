@@ -6,7 +6,7 @@ const Intro = () => {
     <section className="hero">
       <section className="intro">
         <div className="intro-text">
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-3xl font-bold sm:text-2xl">
             GraphQL Security Testing Toolkit
           </h1>
           <p className="text-lg">
