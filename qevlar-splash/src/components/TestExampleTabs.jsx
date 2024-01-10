@@ -6,9 +6,9 @@ import testDepth from "../assets/QevlarDepthLimitTestSnippet.png";
 
 const TestExampleTabs = () => {
   const selectedTab =
-    "inline-flex items-center px-6 py-3 text-white bg-gray-600 rounded-lg cursor-pointer";
+    "inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 text-white bg-gray-600 rounded-lg cursor-pointer";
   const deselectedTab =
-    "inline-flex items-center px-6 py-3 rounded-lg hover:bg-gray-100 text-gray-900 cursor-pointer dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white";
+    "inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-gray-100 text-gray-900 cursor-pointer dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white";
 
   const testSnippets = {
     tab0: testMainMenu,
