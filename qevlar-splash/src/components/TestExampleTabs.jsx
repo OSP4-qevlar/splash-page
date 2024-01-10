@@ -8,7 +8,7 @@ const TestExampleTabs = () => {
   const selectedTab =
     "inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 text-white bg-gray-600 rounded-lg cursor-pointer";
   const deselectedTab =
-    "inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-gray-100 text-gray-900 cursor-pointer dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white";
+    "inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-gray-100 text-gray-900 cursor-pointer bg-gray-800 hover:bg-gray-700 text-white";
 
   const testSnippets = {
     tab0: testMainMenu,
@@ -26,7 +26,7 @@ const TestExampleTabs = () => {
   const [activeTab, setActiveTab] = useState("tab0");
 
   return (
-    <section className="text-gray-900 dark:text-white">
+    <section className="text-white">
       <h1 className="text-2xl font-bold text-center pt-10">
         Preview the testing environment
       </h1>
