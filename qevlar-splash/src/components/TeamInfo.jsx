@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const TeamInfo = () => {
   return (
@@ -26,6 +27,9 @@ const TeamInfo = () => {
               <a href="https://github.com/joshuamcdaniel95">
                 <FaGithubSquare className="text-3xl text-white hover:text-gray-400" />
               </a>
+              <a href="mailto:jwilliammcdaniel@gmail.com">
+                <MdEmail className="text-3xl text-white hover:text-gray-400" />
+              </a>
               <a href="https://www.linkedin.com/in/joshuamcdanielxyz/">
                 <FaLinkedin className="text-3xl text-white hover:text-gray-400" />
               </a>
@@ -46,6 +50,9 @@ const TeamInfo = () => {
             <div className="flex justify-center space-x-4">
               <a href="https://github.com/LandonOsteen">
                 <FaGithubSquare className="text-3xl text-white hover:text-gray-400" />
+              </a>
+              <a href="mailto:landonwyatteosteen@gmail.com">
+                <MdEmail className="text-3xl text-white hover:text-gray-400" />
               </a>
               <a href="https://linkedin.com/in/landonosteen">
                 <FaLinkedin className="text-3xl text-white hover:text-gray-400" />
@@ -68,6 +75,9 @@ const TeamInfo = () => {
               <a href="https://github.com/conorbell">
                 <FaGithubSquare className="text-3xl text-white hover:text-gray-400" />
               </a>
+              <a href="mailto:conorbell27@gmail.com">
+                <MdEmail className="text-3xl text-white hover:text-gray-400" />
+              </a>
               <a href="https://www.linkedin.com/in/conor-bell/">
                 <FaLinkedin className="text-3xl text-white hover:text-gray-400" />
               </a>
@@ -86,6 +96,9 @@ const TeamInfo = () => {
             <div className="flex justify-center space-x-4">
               <a href="https://github.com/johniskorean">
                 <FaGithubSquare className="text-3xl text-white hover:text-gray-400" />
+              </a>
+              <a href="mailto:johnhyungilnoh@gmail.com">
+                <MdEmail className="text-3xl text-white hover:text-gray-400" />
               </a>
               <a href="https://www.linkedin.com/in/johnhyungilnoh/">
                 <FaLinkedin className="text-3xl text-white hover:text-gray-400" />
