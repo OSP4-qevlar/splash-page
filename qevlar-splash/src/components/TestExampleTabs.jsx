@@ -4,9 +4,6 @@ import testMainMenu from "../assets/QevlarMainMenuTestSnippet.png";
 import testSQL from "../assets/QevlarSQLTestSnippet.png";
 import testDepth from "../assets/QevlarDepthLimitTestSnippet.png";
 
-import { useInView } from "react-intersection-observer";
-import "tailwindcss/tailwind.css";
-
 const TestExampleTabs = () => {
   const selectedTab =
     "inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 text-white bg-gray-600 rounded-lg cursor-pointer";
