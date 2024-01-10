@@ -25,11 +25,6 @@ const TestExampleTabs = () => {
   const [testSnippet, setTestSnippet] = useState(testSnippets["tab0"]);
   const [activeTab, setActiveTab] = useState("tab0");
 
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
     <section className="text-gray-900 dark:text-white">
       <h1 className="text-2xl font-bold text-center pt-10">
@@ -79,14 +74,7 @@ const TestExampleTabs = () => {
           </li>
         </ul>
         <div className="max-w-3xl w-full">
-          <div
-            className={`p-6 dark:bg-gray-800 rounded-lg ${
-              inView ? "animate-fadeIn" : ""
-            }`}
-            ref={ref}
-          >
-            <img src={testSnippet} alt="Test Snippet" className="w-full" />
-          </div>
+          <img src={testSnippet} alt="Test Snippet" className="w-full" />
         </div>
       </div>
     </section>

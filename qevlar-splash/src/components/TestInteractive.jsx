@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/dark.css";
 
-// Assuming these are your custom styles that don't conflict with Tailwind
 import "../../src/App.css";
 import "../../src/index.css";
 
