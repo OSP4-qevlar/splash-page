@@ -1,11 +1,11 @@
-import "../../src/App.css";
-import "../../src/index.css";
+import '../../src/App.css';
+import '../../src/index.css';
 
 const Features = () => {
   return (
-    <div className="large-section" id="features">
-      <div className="features">
-        <div className="card">
+    <div className='large-section' id='features'>
+      <div className='features'>
+        <div className='card'>
           <featureTitle>Complete Testing Toolkit</featureTitle>
           <featureDescription>
             A complete library of lightweight tools to test your API against
@@ -13,7 +13,7 @@ const Features = () => {
           </featureDescription>
         </div>
 
-        <div className="card">
+        <div className='card'>
           <featureTitle>No External Dependencies</featureTitle>
           <featureDescription>
             No need to download any external dependencies. Qevlar is built
@@ -21,7 +21,7 @@ const Features = () => {
           </featureDescription>
         </div>
 
-        <div className="card">
+        <div className='card'>
           <featureTitle>Single Configuration File</featureTitle>
           <featureDescription>
             Just configure a single file for your testing needs and run
