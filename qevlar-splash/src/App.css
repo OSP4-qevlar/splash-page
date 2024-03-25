@@ -1,10 +1,10 @@
 /* Import Roboto font from Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 /* Import Medium.otf for headers and logo */
 @font-face {
-  font-family: "Medium";
-  src: url("../public/Medium.otf") format("opentype");
+  font-family: 'Medium';
+  src: url('../public/Medium.otf') format('opentype');
 }
 
 @tailwind base;
@@ -40,7 +40,7 @@
 .button-navigation {
   background-color: var(--primary-color);
   min-height: 3rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   color: var(--light-color);
   font-size: 1rem;
@@ -119,7 +119,7 @@
 
 /* Full-screen mobile menu styling */
 .nav-links.open {
-  font-family: "Medium";
+  font-family: 'Medium';
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -207,7 +207,7 @@
 }
 
 featureTitle {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: var(--light-color);
   font-size: 1.5rem;
@@ -216,8 +216,8 @@ featureTitle {
 }
 
 featureDescription {
-  font-family: "Roboto", sans-serif;
-  color: rgba(255, 255, 255, 0.44);
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255, 255, 255, 0.709);
   font-size: 0.9rem;
   line-height: 1.5;
   padding-left: 10%;
@@ -246,7 +246,7 @@ featureDescription {
 
 .test-summary h4 {
   font-size: 1.2rem;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 400;
   margin-bottom: 40px;
   text-align: center;
@@ -292,7 +292,7 @@ featureDescription {
 }
 
 .feature-title {
-  font-family: "Medium";
+  font-family: 'Medium';
   font-size: small;
 }
 
@@ -350,9 +350,9 @@ featureDescription {
 }
 
 .footer-line {
-  background: "#6F38C5";
-  height: "5px";
-  border: "none";
+  background: '#6F38C5';
+  height: '5px';
+  border: 'none';
 }
 
 /* Team Component Styling */
@@ -389,7 +389,7 @@ featureDescription {
 }
 
 teamName {
-  font-family: "Medium";
+  font-family: 'Medium';
   font-weight: 700;
   color: var(--light-color);
   font-size: 0.9rem;
@@ -398,7 +398,7 @@ teamName {
 }
 
 teamDescription {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--tertiary-color);
   font-size: 1rem;
   font-weight: 200;
@@ -461,7 +461,7 @@ code {
   padding: 20px;
   color: #fff;
   font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   grid-column: 1;
 }
 
