@@ -1,18 +1,7 @@
-import { React, useRef, useMemo } from "react";
-import { Canvas, useFrame, extend } from "@react-three/fiber";
-import {
-  Mesh,
-  Shape,
-  Vector3,
-  BufferGeometry,
-  ExtrudeGeometry,
-  LineSegments,
-  WireframeGeometry,
-  LineBasicMaterial,
-} from "three";
-import * as THREE from "three";
-import { Wireframe } from "@react-three/drei";
-import { WireframeMaterial } from "@react-three/drei/materials/WireframeMaterial";
+import { useRef, useMemo } from 'react';
+import { useFrame } from '@react-three/fiber';
+import { ExtrudeGeometry } from 'three';
+import * as THREE from 'three';
 
 const HexagonGeometry = () => {
   //declare size variable, initialize to 10
@@ -85,7 +74,7 @@ const HexagonGeometry = () => {
     <>
       <mesh ref={hexRef} geometry={geometry} rotation={[0, 0, 0]}>
         <meshBasicMaterial
-          color={"#FFFFFF"}
+          color={'#FFFFFF'}
           transparent
           opacity={0.1}
           wireframe
